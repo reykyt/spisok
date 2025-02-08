@@ -38,9 +38,9 @@ myBtn.addEventListener('click', () => {
         divv.classList.remove("divvv")
 
     })
-    btnDell.addEventListener("click", () => {
+    btnDell.addEventListener("click", (event) => {
         // list.removeChild(newItem);
-        divv.classList.remove("divvv")
+        event.target.classList.remove("divvv")
         newItem.classList.add("new")
         deleteButton.classList.add("btndelllle")
 
