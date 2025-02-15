@@ -17,7 +17,9 @@ myBtn.addEventListener('click', () => {
 
         // Добавить элемент в список
         list.appendChild(newItem);
-
+        newItem.addEventListener("click", () => {
+            newItem.classList.toggle("new")
+        })
         // Очистить поле ввода
         nameInput.value = "";
         //создание кнопки для удаления элемента
@@ -38,9 +40,9 @@ myBtn.addEventListener('click', () => {
             divv.classList.add("divvv")
             btnDell.addEventListener("click", deleteee)
             function deleteee() {
-                // list.removeChild(newItem);
+                list.removeChild(newItem);
                 divv.classList.remove("divvv")
-                newItem.classList.add("new")
+
                 deleteButton.classList.add("btndelllle")
 
             }
